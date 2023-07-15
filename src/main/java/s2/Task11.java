@@ -23,6 +23,7 @@ public class Task11 {
 }
 
 class OptionOne {
+
     public void go(int max, int[] month) {
 
         int maxPrecipitation = 0;

@@ -24,12 +24,12 @@ public class Task14 {
         System.out.println("Ответ будет равен " + proverka);
     }
 
-    // 2^0 = 1 = 1
-    // 2^1 = 2 = 3
-    // 2^2 = 4 = 7
-    // 2^3 = 8 = 15
-    // 2^4 = 16 = 31
-    // 2^5 = 32 = 63
+    // 2^0 = 1 Ответ = 1
+    // 2^1 = 2 Ответ = 3
+    // 2^2 = 4 Ответ = 7
+    // 2^3 = 8 Ответ = 15
+    // 2^4 = 16 Ответ = 31
+    // 2^5 = 32 Ответ = 63
 
     public static int requestNum() {
         Scanner scanner = new Scanner(System.in);
