@@ -1,7 +1,7 @@
 package s3;
 
 import java.util.Scanner;
-import java.util.stream.IntStream;
+import java.util.regex.Pattern;
 
 public class Task12 {
 
@@ -19,17 +19,18 @@ public class Task12 {
     public static void main(String[] args) {
         System.out.println("Введите строку: ");
         String str = requestStr();
+        //String str = "JBorn*Course*JaVa";
         System.out.println("Введите разделитель: ");
-        String charsStr =  requestStr();
-        //char chars = charsStr.charAt(charsStr.length()-1);
+        String charsStr = Pattern.quote(requestStr());
+        char chars = charsStr.charAt(charsStr.length() - 1);
         System.out.println("Вы ввели: " + str);
-        String[] strTemp = str.split("\\*");
+        System.out.println(chars);
+        String[] strTemp = str.split(charsStr);
 
         System.out.println("Результат:");
-        for (int i = 0; i < strTemp.length; i++) {
-            System.out.println(strTemp[i] + " - " + strTemp[i].length());
+        for (String s : strTemp) {
+            System.out.println(s + " - " + s.length());
         }
-
     }
 
     public static String requestStr() {
