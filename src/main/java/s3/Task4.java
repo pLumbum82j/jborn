@@ -3,6 +3,17 @@ package s3;
 import java.util.Scanner;
 
 public class Task4 {
+
+    /**
+     * Нарисовать в консоли прямоугольник с 2-мя заданными сторонами. Стороны (целые числа) запрашиваются из консоли A и B.
+     * Например A=10 и B=5, то вывести:
+     *       **********
+     *       *        *
+     *       *        *
+     *       *        *
+     *       **********
+     */
+
     public static void main(String[] args) {
         StringBuilder str = new StringBuilder();
         System.out.println("Введите число A");

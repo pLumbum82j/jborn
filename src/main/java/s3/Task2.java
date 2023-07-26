@@ -4,6 +4,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Task2 {
+
+    /**
+     * Написать программу, которая выводит последовательность рандомных целых чисел (ПИН-код) по количеству регистров,
+     * которые вводятся из консоли. Например, N=7 (N-вводится из консоли). Результат: 5412409.
+     */
+
     public static void main(String[] args) {
         int n = requestNum();
         int min = 0;

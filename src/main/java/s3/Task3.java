@@ -3,6 +3,19 @@ package s3;
 import java.util.Scanner;
 
 public class Task3 {
+
+    /**
+     * Вывести в консоле строки, состоящие из введенных символов. Строка вводится с клавиатуры. Например, слово «колбаса».
+     * Результат:
+     * к
+     * оо
+     * ллл
+     * бббб
+     * ааааа
+     * сссссс
+     * ааааааа
+     */
+
     public static void main(String[] args) {
         String str = requestString();
         StringBuilder resultString = new StringBuilder();
