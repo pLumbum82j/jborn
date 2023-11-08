@@ -10,7 +10,7 @@ public class Task5 {
     public static void main(String[] args) {
         String serchChar = requestSymbol();
         String lowerSymbol = serchChar.toLowerCase();
-        System.out.println("Букве: \"" +  serchChar + "\" латинского алфавита соответсвует порядковый номер: "
+        System.out.println("Букве: \"" +  serchChar + "\" латинского алфавита соответствует порядковый номер: "
                 + (Task5Enum.valueOf(lowerSymbol).ordinal() + 1));
     }
 
