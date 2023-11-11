@@ -1,22 +1,13 @@
 package s7;
 
-public class Compare<T> extends Number {
-    @Override
-    public int intValue() {
-        return 0;
-    }
-    @Override
-    public long longValue() {
-        return 0;
-    }
-
-    @Override
-    public float floatValue() {
-        return 0;
-    }
-
-    @Override
-    public double doubleValue() {
-        return 0;
+public class Compare<T extends Number, K extends Number> {
+    int compare(T first, K second) {
+        if (first.intValue() > second.intValue()){
+            return 1;
+        } else if (first.intValue() < second.intValue()) {
+            return -1;
+        } else{
+            return 0;
+        }
     }
 }
