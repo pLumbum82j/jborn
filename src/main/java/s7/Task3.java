@@ -6,8 +6,8 @@ package s7;
  */
 public class Task3 {
     public static void main(String[] args) {
-        Integer a = 2;
-        Integer b = 3;
+        Double a = 3333d;
+        Integer b = 3332;
         Compare compare = new Compare();
         System.out.println(compare.compare(a, b));
 
