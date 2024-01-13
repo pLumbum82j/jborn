@@ -1,8 +1,7 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Test {
     public static void main(String[] args) {
@@ -11,8 +10,12 @@ public class Test {
         test.add(2);
         test.add(3);
         System.out.println(test);
-        test.add(2,0);
+        test.add(2, 0);
         System.out.println(test);
+
+        System.out.println("---");
+        test.stream().filter(p -> p > 1).forEach(System.out::println);
+        System.out.println("---");
 
         List<Integer> listTest = new ArrayList<>();
         listTest.add(1);
@@ -21,9 +24,9 @@ public class Test {
         System.out.println("BEFORE ITERATOR");
         System.out.println(listTest);
         Iterator<Integer> i = listTest.iterator();
-        while (i.hasNext()){
+        while (i.hasNext()) {
             Integer a = i.next();
-            if(a == 2) {
+            if (a == 2) {
                 i.remove();
             }
         }
