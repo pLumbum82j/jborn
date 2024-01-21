@@ -17,6 +17,7 @@ public class Test {
         test.stream().filter(p -> p > 1).forEach(System.out::println);
         System.out.println("---");
 
+
         List<Integer> listTest = new ArrayList<>();
         listTest.add(1);
         listTest.add(2);
